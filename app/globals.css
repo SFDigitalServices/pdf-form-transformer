@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sf-blue: #005695;
+  --color-sf-gold: #FDB714;
+  --color-sf-navy: #1b519e;
+  --color-sf-dark: #0b0c0c;
+  --color-sf-error: #ac0000;
+  --color-sf-link: #2a60af;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b0c0c;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}

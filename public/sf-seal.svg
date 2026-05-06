@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="City and County of San Francisco seal">
+  <!-- Outer filled circle -->
+  <circle cx="20" cy="20" r="19.5" fill="#005695"/>
+  <!-- Gold outer ring -->
+  <circle cx="20" cy="20" r="18.5" fill="none" stroke="#FDB714" stroke-width="1.5"/>
+  <!-- Gold inner decorative ring -->
+  <circle cx="20" cy="20" r="14.5" fill="none" stroke="#FDB714" stroke-width="0.75"/>
+  <!-- Phoenix wings (simplified) -->
+  <path d="M11 22 Q14 16 20 14 Q26 16 29 22 Q26 19 20 18 Q14 19 11 22Z" fill="#FDB714"/>
+  <!-- Phoenix body -->
+  <ellipse cx="20" cy="22" rx="3" ry="4" fill="#FDB714"/>
+  <!-- Phoenix tail feathers -->
+  <path d="M17 25 Q16 29 14 30 M20 26 Q20 30 20 31 M23 25 Q24 29 26 30" stroke="#FDB714" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <!-- City name arc (top) -->
+  <path id="top-arc" d="M7 20 A13 13 0 0 1 33 20" fill="none"/>
+  <text font-family="serif" font-size="4.2" fill="white" letter-spacing="0.6">
+    <textPath href="#top-arc" startOffset="8%">SAN FRANCISCO</textPath>
+  </text>
+  <!-- EST arc (bottom) -->
+  <path id="bot-arc" d="M12 26 A10 10 0 0 0 28 26" fill="none"/>
+  <text font-family="serif" font-size="3.5" fill="#FDB714" letter-spacing="0.4">
+    <textPath href="#bot-arc" startOffset="18%">EST. 1850</textPath>
+  </text>
+</svg>
