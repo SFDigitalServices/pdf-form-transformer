@@ -74,7 +74,7 @@ type RawQuestion = {
 };
 
 export async function extractQuestionsFromText(pdfText: string): Promise<ExtractionResult> {
-  const client = new Anthropic();
+  const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   let response: Anthropic.Message;
   try {
