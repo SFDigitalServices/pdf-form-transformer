@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
     root: __dirname,
   },
   serverExternalPackages: ['unpdf'],
-  env: {
-    ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
-  },
 };
 
 export default nextConfig;
