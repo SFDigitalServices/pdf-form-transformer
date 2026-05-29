@@ -71,6 +71,7 @@ export async function POST(request: NextRequest) {
     });
   } catch (err) {
     if (err instanceof ExtractionError) {
+      console.error('[extract] 500: ExtractionError:', err.message, err);
       return NextResponse.json(
         {
           error:
@@ -79,6 +80,7 @@ export async function POST(request: NextRequest) {
         { status: 500 },
       );
     }
+    console.error('[extract] 500: unexpected error:', err);
     return NextResponse.json({ error: 'An unexpected error occurred.' }, { status: 500 });
   }
 }
