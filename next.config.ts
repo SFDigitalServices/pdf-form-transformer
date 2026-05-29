@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
-  serverExternalPackages: ['pdfjs-dist'],
+  serverExternalPackages: ['unpdf'],
 };
 
 export default nextConfig;
