@@ -5,6 +5,11 @@ import { parsePdfText } from '@/lib/pdfParser';
 import { extractQuestionsFromText, ExtractionError } from '@/lib/extractQuestions';
 
 export async function POST(request: NextRequest) {
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.error('[extract] ANTHROPIC_API_KEY is not set');
+    return NextResponse.json({ error: 'Server configuration error.' }, { status: 500 });
+  }
+
   if (process.env.EXTRACTION_KILL_SWITCH === 'true') {
     return NextResponse.json(
       { error: 'This feature is temporarily unavailable. Please try again later.' },
