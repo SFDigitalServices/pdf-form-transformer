@@ -6,6 +6,7 @@ frontend:
         - npm install --cache .npm --prefer-offline
     build:
       commands:
+        - printf "ANTHROPIC_API_KEY=%s\n" "$ANTHROPIC_API_KEY" >> .env.production
         - npm run build
   artifacts:
     baseDirectory: .next
